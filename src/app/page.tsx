@@ -1,101 +1,75 @@
-import Image from "next/image";
+// pages/index.js
+import React from 'react';
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gray-100 py-8">
+      {/* Container */}
+      <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+        {/* Fall 2024 Header */}
+        <div className="flex items-center bg-blue-600 text-white p-4 rounded-t-lg">
+          <h1 className="text-lg font-bold">Fall 2024</h1>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Main Content */}
+        <div className="p-4">
+          {/* Sport Title */}
+          <h2 className="text-2xl font-bold">5V5 Basketball</h2>
+
+          {/* Event List */}
+          <div className="space-y-4 mt-6">
+            {/* First Event - Co-Rec Open */}
+            <div className="flex justify-between items-center border-b pb-4">
+              <div>
+                <Link href="/form" className="text-xl font-semibold text-blue-600">Co-Rec Open</Link>
+              </div>
+              <div className="text-center">
+                <span className="block text-blue-600 font-bold">Sep 24 5:00PM - Oct 15 5:00PM</span>
+                <span className="block text-gray-500 text-sm">Join Teams Until: 11/14/24 Midnight</span>
+              </div>
+              <div className="text-right">
+                <span className="bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Upcoming</span>
+              </div>
+            </div>
+
+            {/* Second Event - Men's Open */}
+            <div className="flex justify-between items-center border-b pb-4">
+              <div>
+                <button className="text-xl font-semibold text-blue-600">Mens Open</button>
+              </div>
+              <div className="text-center">
+                <span className="block text-blue-600 font-bold">Sep 24 5:00PM - Oct 15 5:00PM</span>
+                <span className="block text-gray-500 text-sm">Join Teams Until: 11/14/24 Midnight</span>
+              </div>
+              <div className="text-right">
+                <span className="bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Upcoming</span>
+              </div>
+            </div>
+
+            {/* Third Event - Women's Open */}
+            <div className="flex justify-between items-center">
+              <div>
+                <h3 className="text-xl font-semibold text-blue-600">Womens Open</h3>
+              </div>
+              <div className="text-center">
+                <span className="block text-blue-600 font-bold">Sep 24 5:00PM - Oct 15 5:00PM</span>
+                <span className="block text-gray-500 text-sm">Join Teams Until: 11/14/24 Midnight</span>
+              </div>
+              <div className="text-right">
+                <span className="bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Upcoming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Season Info */}
+        <div className="p-4">
+          <h4 className="text-gray-600 font-bold">Season</h4>
+          <p className="text-gray-800">Oct 21 - Nov 14</p>
+        </div>
+      </div>
+
     </div>
   );
 }
