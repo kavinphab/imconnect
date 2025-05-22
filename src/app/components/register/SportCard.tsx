@@ -38,7 +38,7 @@ export default function SportCard({sport, term}:Props) {
             
             <div className="flex justify-between items-center border-b pb-4">
               <div>
-                <Link href="/form" className="text-xl font-semibold text-blue-600">Co-Rec Open</Link>
+                <Link href="/jointeam" className="text-xl font-semibold text-blue-600">Co-Rec Open</Link>
               </div>
               <div className="text-center">
                 <span className="block text-blue-600 font-bold">Sep 24 5:00PM - Oct 15 5:00PM</span>
@@ -52,7 +52,7 @@ export default function SportCard({sport, term}:Props) {
            
             <div className="flex justify-between items-center border-b pb-4">
               <div>
-                <button className="text-xl font-semibold text-blue-600">Mens Open</button>
+                <Link href='/jointeam' className="text-xl font-semibold text-blue-600">Mens Open</Link>
               </div>
               <div className="text-center">
                 <span className="block text-blue-600 font-bold">Sep 24 5:00PM - Oct 15 5:00PM</span>
@@ -66,7 +66,7 @@ export default function SportCard({sport, term}:Props) {
            
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="text-xl font-semibold text-blue-600">Womens Open</h3>
+                <Link href='/jointeam' className="text-xl font-semibold text-blue-600">Womens Open</Link>
               </div>
               <div className="text-center">
                 <span className="block text-blue-600 font-bold">Sep 24 5:00PM - Oct 15 5:00PM</span>
