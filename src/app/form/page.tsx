@@ -1,11 +1,11 @@
-import From from '../components/form'
+import Form from '../components/form'
 
 import React from 'react'
 
 const form = () => {
   return (
     <div>
-      <From />
+      <Form />
     </div>
   )
 }
