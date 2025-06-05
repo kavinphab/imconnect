@@ -1,5 +1,5 @@
 import React from 'react';
-// import Link from 'next/link';
+// import s from 'next/link';
 
 // type Event = {
 //   name: string;
